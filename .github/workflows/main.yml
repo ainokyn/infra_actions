@@ -52,11 +52,11 @@ jobs:
         # Запуск скрипта авторизации на Docker Hub
         uses: docker/login-action@v1 
         with:
-          username: LITOPS
+          username: litops
           password: 123qwe!E!E
       - name: Push to Docker Hub
         # Пуш образа в Docker Hub 
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: litops/infra_actions:latest
+          tags: litops/infra_actions:v1
